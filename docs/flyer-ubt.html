@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<title>Lika Academy — Flyer Ekonomi UBT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+  @page { size: A5; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #0a1f3d;
+    --navy-soft: #1e3a5f;
+    --gold: #c9a961;
+    --bg: #fafaf7;
+    --bg-soft: #f2f2ee;
+    --text: #0a1f3d;
+    --text-muted: #6b7a90;
+    --line: #e3e0d4;
+  }
+
+  html, body {
+    font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+    color: var(--text);
+    background: #e5e7eb;
+    font-weight: 400;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page {
+    width: 148mm;
+    height: 210mm;
+    page-break-after: always;
+    background: var(--bg);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .page:last-child { page-break-after: auto; }
+
+  /* ============= FRONT ============= */
+  .front {
+    padding: 14mm 12mm;
+    background: linear-gradient(135deg, #0a0418 0%, #1a0d3d 50%, #2d1b4e 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  .front::before {
+    content: '';
+    position: absolute;
+    top: -80px; right: -80px;
+    width: 280px; height: 280px;
+    background: radial-gradient(circle, rgba(124, 58, 237, 0.4), transparent 70%);
+    border-radius: 50%;
+  }
+  .front::after {
+    content: '';
+    position: absolute;
+    bottom: -100px; left: -100px;
+    width: 320px; height: 320px;
+    background: radial-gradient(circle, rgba(6, 212, 248, 0.18), transparent 70%);
+    border-radius: 50%;
+  }
+
+  .top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    z-index: 2;
+  }
+  .top-row img {
+    height: 9mm;
+    background: white;
+    padding: 1.5mm 3mm;
+    border-radius: 6px;
+  }
+  .top-row .meta {
+    font-size: 7.5pt;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    text-align: right;
+  }
+
+  .hero {
+    margin-top: 22mm;
+    position: relative;
+    z-index: 2;
+  }
+  h1 {
+    font-size: 38pt;
+    line-height: 0.95;
+    font-weight: 900;
+    color: white;
+    letter-spacing: -1.5px;
+  }
+  h1 .light { font-weight: 900; color: rgba(255, 255, 255, 0.55); }
+  h1 .accent { color: var(--gold); }
+
+  .divider {
+    width: 18mm;
+    height: 1.2mm;
+    background: var(--gold);
+    margin: 10mm 0 8mm;
+    border-radius: 2px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .subhead {
+    font-size: 11.5pt;
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 400;
+    max-width: 95%;
+    position: relative;
+    z-index: 2;
+  }
+  .subhead strong { font-weight: 700; color: white; }
+
+  .meta-line {
+    margin-top: 8mm;
+    font-size: 9pt;
+    color: rgba(255, 255, 255, 0.65);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+  }
+  .meta-line span { margin-right: 4mm; display: inline-block; }
+  .meta-line span::before {
+    content: '•';
+    color: var(--gold);
+    margin-right: 2mm;
+    font-weight: 900;
+  }
+
+  .footer-front {
+    margin-top: auto;
+    padding-top: 12mm;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    justify-content: space-between;
+    font-size: 8pt;
+    color: rgba(255, 255, 255, 0.55);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* ============= BACK ============= */
+  .back {
+    padding: 14mm 12mm;
+  }
+  .back-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 6mm;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 10mm;
+  }
+  .back-header img { height: 7mm; }
+  .back-header .tag {
+    font-size: 7.5pt;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+  }
+
+  /* Journey */
+  .journey {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 3mm;
+    margin-bottom: 12mm;
+  }
+  .journey-step {
+    flex: 1;
+    text-align: center;
+    padding: 4mm 2mm;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid;
+  }
+  .journey-step.start {
+    background: #fee2e2;
+    border-color: #fca5a5;
+  }
+  .journey-step.middle {
+    background: linear-gradient(135deg, #faf9ff, #ede9fe);
+    border-color: #c4b5fd;
+  }
+  .journey-step.end {
+    background: linear-gradient(135deg, #ecfeff, #cffafe);
+    border-color: #67e8f9;
+  }
+  .journey-step .icon {
+    font-size: 16pt;
+    margin-bottom: 1.5mm;
+  }
+  .journey-step .label {
+    font-size: 7pt;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 1mm;
+  }
+  .journey-step .text {
+    font-size: 10pt;
+    font-weight: 800;
+    color: var(--navy);
+  }
+  .journey-arrow {
+    align-self: center;
+    color: #7c3aed;
+    font-weight: 900;
+    font-size: 14pt;
+  }
+
+  /* Section title */
+  h2 {
+    font-size: 9pt;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 4mm;
+  }
+
+  /* Courses */
+  .courses {
+    display: grid;
+    gap: 2.5mm;
+    margin-bottom: 6mm;
+  }
+  .course {
+    padding: 3mm 4mm;
+    border-left: 2px solid var(--navy);
+    background: var(--bg-soft);
+    border-radius: 0 6px 6px 0;
+  }
+  .course .name {
+    font-weight: 700;
+    font-size: 10pt;
+    color: var(--navy);
+  }
+  .course .meta {
+    font-size: 8pt;
+    color: var(--text-muted);
+    margin-top: 0.5mm;
+    font-weight: 500;
+  }
+
+  /* Features */
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2mm 5mm;
+    margin-bottom: 8mm;
+  }
+  .feature {
+    font-size: 9pt;
+    font-weight: 600;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 2mm;
+  }
+  .feature::before {
+    content: '✓';
+    color: var(--navy);
+    font-weight: 900;
+    font-size: 11pt;
+  }
+
+  /* QR CTA */
+  .qr-cta {
+    margin-top: auto;
+    background: var(--navy);
+    color: white;
+    border-radius: 12px;
+    padding: 6mm;
+    display: flex;
+    gap: 5mm;
+    align-items: center;
+  }
+  .qr-cta .qr-img {
+    width: 30mm;
+    height: 30mm;
+    background: white;
+    padding: 2mm;
+    border-radius: 6px;
+    flex-shrink: 0;
+  }
+  .qr-cta .qr-img img { width: 100%; height: 100%; display: block; }
+  .qr-cta-text { flex: 1; }
+  .qr-cta-text .small {
+    font-size: 7.5pt;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 2mm;
+  }
+  .qr-cta-text strong {
+    display: block;
+    font-size: 12pt;
+    font-weight: 800;
+    margin-bottom: 2mm;
+    line-height: 1.2;
+  }
+  .qr-cta-text p {
+    font-size: 9pt;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.4;
+    font-weight: 400;
+  }
+</style>
+</head>
+<body>
+
+<!-- =================== FRONT =================== -->
+<div class="page front">
+
+  <div class="top-row">
+    <img src="lika-logo.png" alt="Lika Academy">
+    <div class="meta">Akademi<br>Programimi</div>
+  </div>
+
+  <div class="hero">
+    <h1>NGA <span class="light">EXCEL</span><br>NË <span class="accent">DATA</span><br>ANALYST.</h1>
+
+    <div class="divider"></div>
+
+    <p class="subhead">
+      Mëso <strong>Python</strong> për analizë të dhënash dhe ndërto aftësi për tregun e punës.
+    </p>
+
+    <div class="meta-line">
+      <span>2 muaj</span>
+      <span>Fundjavave</span>
+      <span>Online</span>
+      <span>4 projekte</span>
+    </div>
+  </div>
+
+  <div class="footer-front">
+    <span>@likaacademy.al</span>
+  </div>
+
+</div>
+
+<!-- =================== BACK =================== -->
+<div class="page back">
+
+  <div class="back-header">
+    <img src="lika-logo.png" alt="Lika Academy">
+    <div class="tag">Python · Data Analysis</div>
+  </div>
+
+  <h2>Kurset që ofrojmë</h2>
+  <div class="courses">
+    <div class="course">
+      <div class="name">Python Basics</div>
+      <div class="meta">2 muaj &middot; Bazat e programimit, struktura të dhënash, AI</div>
+    </div>
+    <div class="course">
+      <div class="name">JavaScript / MERN</div>
+      <div class="meta">2 muaj &middot; React, Node.js, Express, MongoDB</div>
+    </div>
+    <div class="course">
+      <div class="name">Golang</div>
+      <div class="meta">2 muaj &middot; Concurrency, REST API, Docker</div>
+    </div>
+    <div class="course">
+      <div class="name">.NET / C#</div>
+      <div class="meta">2 muaj &middot; ASP.NET Core, Entity Framework, Azure</div>
+    </div>
+  </div>
+
+  <h2>Çfarë do të mësosh</h2>
+  <div class="features">
+    <div class="feature">Programim praktik</div>
+    <div class="feature">Zgjidhje problemesh</div>
+    <div class="feature">Analizë të dhënash</div>
+    <div class="feature">4 projekte portfolio</div>
+  </div>
+
+  <div class="qr-cta">
+    <div class="qr-img">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https%3A%2F%2Fwa.me%2F355674057359%3Ftext%3DJam%2520student%2520n%C3%AB%2520UBT%2520Ekonomi.%2520Dua%2520kursin%2520Python%2520p%C3%ABr%2520Data%2520Analysis.%2520Kur%2520fillon%2520grupi%2520tjet%C3%ABr%253F" alt="WhatsApp QR">
+    </div>
+    <div class="qr-cta-text">
+      <div class="small">Kontakto</div>
+      <strong>Skano dhe na shkruaj në WhatsApp</strong>
+      <p>Mëso më shumë për kursin Python për Data Analysis.</p>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

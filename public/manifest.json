@@ -1,0 +1,33 @@
+{
+  "name": "Lika Academy",
+  "short_name": "Lika",
+  "description": "AI-focused coding academy in Kamëz, Tirana. Courses from 99€.",
+  "start_url": "/sq",
+  "display": "standalone",
+  "background_color": "#0a0a1a",
+  "theme_color": "#ee3533",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo-icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["education", "developer tools"],
+  "lang": "sq",
+  "dir": "ltr"
+}

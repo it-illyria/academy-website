@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lika Academy
+
+Website for Lika Academy — a coding academy in Kamëz/Tirana teaching kids, teens, and adults. Built with Next.js (App Router), TypeScript, Tailwind CSS, and Supabase.
+
+Full architecture, conventions, and feature inventory live in [AGENTS.md](./AGENTS.md) — read that first before making changes.
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
+cp .env.example .env.local   # fill in the values you have (see AGENTS.md > Environment Variables)
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) (falls back to 3001/3002 if busy).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Common Commands
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run dev          # dev server (Turbopack)
+npm run build         # production build
+npm start              # run production build
+npm run lint            # ESLint
+npx tsc --noEmit        # TypeScript check
+```
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+See [AGENTS.md](./AGENTS.md#file-structure) for the full breakdown of `src/app`, `src/components`, `src/lib`, `messages/`, and `docs/`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Setup Guides
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [docs/supabase-setup.md](./docs/supabase-setup.md) — database schema
+- [docs/google-sheets-setup.md](./docs/google-sheets-setup.md) — submissions backup webhook
+- [docs/email-deliverability.md](./docs/email-deliverability.md) — Resend DNS (SPF/DKIM/DMARC)
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deployed on Vercel — push to `main` to trigger a build. See [AGENTS.md](./AGENTS.md#deployment) for domain and env var setup.

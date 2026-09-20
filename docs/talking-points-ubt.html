@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<title>Talking Points — UBT Fakulteti i Ekonomisë</title>
+<style>
+  @page { size: A4 portrait; margin: 10mm; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    color: #1a1428;
+    font-size: 9pt;
+    line-height: 1.4;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #7c3aed;
+    padding-bottom: 3mm;
+    margin-bottom: 4mm;
+  }
+  .header img { height: 9mm; }
+  .header-title {
+    font-size: 12pt;
+    font-weight: 800;
+    color: #2d1b4e;
+  }
+  .header-sub { font-size: 8pt; color: #6b7280; margin-top: 0.5mm; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
+  .box {
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    padding: 3mm 4mm;
+    background: #faf9ff;
+  }
+  .box-purple { background: linear-gradient(135deg, #2d1b4e, #4c2a8c); color: white; }
+  .box-yellow { background: #fef3c7; border-color: #fbbf24; }
+  h2 {
+    font-size: 10pt;
+    font-weight: 800;
+    color: #7c3aed;
+    margin-bottom: 2mm;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .box-purple h2 { color: #c4b5fd; }
+  .box-yellow h2 { color: #92400e; }
+  ul { padding-left: 4mm; }
+  li { margin-bottom: 1.5mm; }
+  li strong { color: #2d1b4e; }
+  .box-purple li strong { color: #c4b5fd; }
+  .num {
+    display: inline-block;
+    background: #7c3aed;
+    color: white;
+    width: 5mm; height: 5mm;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 5mm;
+    font-weight: 800;
+    font-size: 8pt;
+    margin-right: 2mm;
+  }
+  .step { margin-bottom: 1.5mm; padding-left: 7mm; text-indent: -7mm; }
+  .qa { margin-bottom: 2mm; }
+  .qa .q {
+    font-weight: 700;
+    color: #2d1b4e;
+    font-size: 8.5pt;
+  }
+  .qa .a {
+    font-size: 8.5pt;
+    color: #374151;
+    margin-top: 0.5mm;
+  }
+  .price-row { display: flex; justify-content: space-between; padding: 1.5mm 0; border-bottom: 1px dotted rgba(255,255,255,0.2); }
+  .price-row:last-child { border: 0; }
+  .price-row strong { color: #06d4f8; font-size: 11pt; }
+  .full-width { grid-column: 1 / -1; }
+  .footer {
+    margin-top: 4mm;
+    padding-top: 2mm;
+    border-top: 1px solid #e5e7eb;
+    font-size: 7.5pt;
+    color: #6b7280;
+    text-align: center;
+  }
+  .footer strong { color: #7c3aed; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="lika-logo.png" alt="Lika Academy">
+  <div>
+    <div class="header-title">Talking Points — UBT</div>
+    <div class="header-sub">Fakulteti i Ekonomisë &middot; Info-sesion</div>
+  </div>
+</div>
+
+<div class="grid">
+
+  <!-- HOOK -->
+  <div class="box full-width box-purple">
+    <h2>🎯 Hook (30 sekondat e para)</h2>
+    <p style="font-size: 9.5pt; line-height: 1.5;">
+      <strong>"Ekonomi pa kod = pjesë e gjysmës më të vogël të tregut. Ekonomi me Python + AI = paga 2-3x më e lartë në Tiranë sot. Lika Academy është 2 muaj, 99€, dhe garanton portfolio profesional."</strong>
+    </p>
+  </div>
+
+  <!-- VLERAT KYÇE -->
+  <div class="box">
+    <h2>✨ 4 Vlera Kyçe</h2>
+    <ul>
+      <li><strong>AI i integruar</strong> në çdo modul, jo vetëm "shtesë"</li>
+      <li><strong>4 projekte portfolio reale</strong> (jo vetëm teori)</li>
+      <li><strong>Hibrid</strong> — vetëm fundjavë, punën/universitetin e vazhdon</li>
+      <li><strong>Mbështetje karriere</strong> — CV review, portfolio, intervista</li>
+    </ul>
+  </div>
+
+  <!-- ANGLE PËR EKONOMI -->
+  <div class="box box-yellow">
+    <h2>💼 Pse Ekonomistët?</h2>
+    <ul>
+      <li><strong>Data analysis</strong> — Excel s'mjafton, Python/SQL po</li>
+      <li><strong>Automatizim</strong> — raporte, fatura, modele</li>
+      <li><strong>Fintech &amp; AI banking</strong> — sektori më i nxehtë në EU</li>
+      <li><strong>Freelance</strong> — Upwork/Toptal: 25-50€/orë</li>
+    </ul>
+  </div>
+
+  <!-- ÇMIMET -->
+  <div class="box box-purple">
+    <h2>💸 Çmimet (Launch)</h2>
+    <div class="price-row">
+      <span>Pro Tracks <span style="color: #c4b5fd;">19+</span></span>
+      <span><span style="text-decoration: line-through; opacity: 0.5;">149€</span> <strong>99€</strong></span>
+    </div>
+    <div class="price-row">
+      <span>Future Gens <span style="color: #c4b5fd;">14-19</span></span>
+      <span><span style="text-decoration: line-through; opacity: 0.5;">149€</span> <strong>99€</strong></span>
+    </div>
+    <div class="price-row">
+      <span>Lika Kids <span style="color: #c4b5fd;">7-15</span></span>
+      <span><span style="text-decoration: line-through; opacity: 0.5;">699€</span> <strong>499€</strong></span>
+    </div>
+    <p style="margin-top: 2mm; font-size: 8pt; color: #fbbf24;">+ Kodi <strong style="color: #fbbf24;">UBT15</strong> = -15% ekstra</p>
+  </div>
+
+  <!-- KURSET -->
+  <div class="box">
+    <h2>📚 4 Kurse Pro Tracks (99€)</h2>
+    <ul>
+      <li><strong>Python Full-Stack + AI</strong> — më relevanti për ekonomistë</li>
+      <li><strong>JavaScript / MERN</strong> — web full-stack</li>
+      <li><strong>Golang</strong> — backend, cloud, microservices</li>
+      <li><strong>.NET / C#</strong> — enterprise (banka, korporata)</li>
+    </ul>
+    <p style="font-size: 8pt; color: #6b7280; margin-top: 2mm;">⏱ 2 muaj &middot; 24 orë mësimi &middot; 4 projekte &middot; Sat+Sun 08-16</p>
+  </div>
+
+  <!-- HAPAT E PREZANTIMIT -->
+  <div class="box">
+    <h2>🎤 Strukturë (15-20 min)</h2>
+    <div class="step"><span class="num">1</span> <strong>Hook</strong> (30s) — fjalia kyçe lart</div>
+    <div class="step"><span class="num">2</span> <strong>Pse Lika</strong> (2 min) — 4 vlera kyçe</div>
+    <div class="step"><span class="num">3</span> <strong>Kurset</strong> (3 min) — fokus Python për ekonomi</div>
+    <div class="step"><span class="num">4</span> <strong>Çmimet + UBT15</strong> (1 min)</div>
+    <div class="step"><span class="num">5</span> <strong>Q&amp;A</strong> (5-7 min)</div>
+    <div class="step"><span class="num">6</span> <strong>CTA</strong> (1 min) — listë regjistrimi + QR</div>
+  </div>
+
+  <!-- Q&A -->
+  <div class="box full-width">
+    <h2>❓ Q&amp;A — Përgjigjet e Gatshme</h2>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3mm 6mm;">
+      <div class="qa">
+        <div class="q">"A kam nevojë për njohuri paraprake?"</div>
+        <div class="a">Jo, nisim nga zero. Mjaft të dish të përdorësh kompjuter.</div>
+      </div>
+      <div class="qa">
+        <div class="q">"Kur janë orët?"</div>
+        <div class="a">E shtunë &amp; e diel, 08:00-16:00. Ti zgjedh slot-in.</div>
+      </div>
+      <div class="qa">
+        <div class="q">"A do gjej punë?"</div>
+        <div class="a">Tregu agritech &amp; fintech në Shqipëri po hapet. Ofrojmë CV review + portfolio.</div>
+      </div>
+      <div class="qa">
+        <div class="q">"Si paguaj?"</div>
+        <div class="a">Bank transfer. Mund të ndahet në 2 pjesë (50% në fillim, 50% në mes).</div>
+      </div>
+      <div class="qa">
+        <div class="q">"Sa janë vendet?"</div>
+        <div class="a">12 vende për grup. Ka 3 grupe në maj 2026.</div>
+      </div>
+      <div class="qa">
+        <div class="q">"A merr certifikatë?"</div>
+        <div class="a">Po — certifikatë në fund + 4 projekte në GitHub.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="box full-width box-purple">
+    <h2>🎯 CTA i Mbylljes (kopjo fjalët)</h2>
+    <p style="font-size: 9.5pt; line-height: 1.6;">
+      <strong>"Sot, kushdo që plotëson formularin e regjistrimit merr 15% off ekstra. Çmimi finalizohet 84€ për 2 muaj. Vetëm sot, vetëm UBT. Kush është në, ngrit dorën — ja ku është lista, kalojeni dorë më dorë."</strong>
+    </p>
+    <p style="margin-top: 2mm; font-size: 8.5pt; color: #c4b5fd;">
+      Pastaj: shpërndaj fletushkat (1 për person), vendos QR-në në projektor (likaacademy.al), kalo listën dorë më dorë.
+    </p>
+  </div>
+
+</div>
+
+<div class="footer">
+  <strong>Lika Academy</strong> &middot; likaacademy.al &middot; info@likaacademy.al &middot; @likaacademy.al
+</div>
+
+</body>
+</html>
