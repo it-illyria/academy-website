@@ -39,7 +39,7 @@ Programimi nuk është vetëm një aftësi teknike — është një supërfuqi n
 
 ### Si të fillosh me Lika Academy?
 
-1. **Zgjidh programin** — Web Development ose Pro Tracks (19+)
+1. **Zgjidh programin** — Web Development ose Pro Tracks
 2. **Apliko online** — Plotëso formularin në faqen tonë
 3. **Fillo të mësosh** — Kurse 2-mujore hibride me instruktorë ekspërt
 
@@ -75,7 +75,7 @@ Programming isn't just a technical skill — it's a superpower in the modern wor
 
 ### How to start with Lika Academy?
 
-1. **Choose your program** — Web Development or Pro Tracks (19+)
+1. **Choose your program** — Web Development or Pro Tracks
 2. **Apply online** — Fill out the form on our website
 3. **Start learning** — 2-month hybrid courses with expert instructors
 

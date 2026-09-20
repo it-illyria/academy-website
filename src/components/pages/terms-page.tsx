@@ -32,7 +32,7 @@ const content = {
         heading: "3. Enrollment & Payment",
         body: [
           "To enroll in a Lika Academy program, you must submit an application through our website and receive a confirmation from our team.",
-          "• Course prices: 99€ (launch price) for Pro Tracks (19+). Pricing for Web Development is coming soon.",
+          "• Course prices: 99€ (launch price) for Pro Tracks. Pricing for Web Development is coming soon.",
           "• Payment must be completed in full before the course start date.",
           "• We accept bank transfers and online payment methods.",
           "• Course duration is 2 months (6 weeks of lessons + 4 weeks of projects), with 2 sessions per week of 2 hours each (12 lesson sessions total).",
@@ -131,7 +131,7 @@ const content = {
         heading: "3. Regjistrimi dhe Pagesa",
         body: [
           "Për t'u regjistruar në një program të Lika Academy, duhet të dërgoni një aplikim nëpërmjet faqes sonë dhe të merrni konfirmim nga ekipi ynë.",
-          "• Çmimet e kurseve: 99€ (çmim lansimi) për Pro Tracks (19+). Çmimi për Web Development do të njoftohet së shpejti.",
+          "• Çmimet e kurseve: 99€ (çmim lansimi) për Pro Tracks. Çmimi për Web Development do të njoftohet së shpejti.",
           "• Pagesa duhet të përfundojë plotësisht para datës së fillimit të kursit.",
           "• Pranojmë transfertë bankare dhe metoda pagese online.",
           "• Kohëzgjatja e kursit është 2 muaj (6 javë mësimi + 4 javë projekte), me 2 seanca në javë nga 2 orë secila (12 seanca mësimi gjithsej).",

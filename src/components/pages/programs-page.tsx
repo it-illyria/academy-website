@@ -113,11 +113,6 @@ export function ProgramsPage() {
                         >
                           <Icon className="h-5 w-5" />
                         </div>
-                        {course.category === "adults" && (
-                          <Badge variant="outline" className={colors.badge}>
-                            19+
-                          </Badge>
-                        )}
                       </div>
 
                       <h3 className="mt-4 text-lg font-semibold group-hover:text-primary transition-colors">

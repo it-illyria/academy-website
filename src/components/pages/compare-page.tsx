@@ -197,7 +197,7 @@ export function ComparePage() {
             variant="outline"
             className="border-primary/30 bg-primary/5 text-primary"
           >
-            Pro Tracks · 19+
+            Pro Tracks
           </Badge>
           <h1 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
             {t("title")}

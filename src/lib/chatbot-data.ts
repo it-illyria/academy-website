@@ -35,8 +35,8 @@ export const QA: QAEntry[] = [
   },
   {
     pattern: /price|cost|çmim|pag/i,
-    en: "Our courses:\n• Web Development: HTML, CSS, JavaScript & Full Stack — pricing coming soon\n• Pro Tracks (19+): 99€ / 2 months (launch price)\nNo hidden fees!",
-    sq: "Kurset tona:\n• Web Development: HTML, CSS, JavaScript & Full Stack — çmimi së shpejti\n• Pro Tracks (19+): 99€ / 2 muaj (çmim lansimi)\nPa tarifa të fshehura!",
+    en: "Our courses:\n• Web Development: HTML, CSS, JavaScript & Full Stack — pricing coming soon\n• Pro Tracks: 99€ / 2 months (launch price)\nNo hidden fees!",
+    sq: "Kurset tona:\n• Web Development: HTML, CSS, JavaScript & Full Stack — çmimi së shpejti\n• Pro Tracks: 99€ / 2 muaj (çmim lansimi)\nPa tarifa të fshehura!",
   },
   {
     pattern: /python/i,
@@ -172,8 +172,8 @@ export const QA: QAEntry[] = [
   // ── Age Groups & Specifics ────────────────────────────────────────────────
   {
     pattern: /age|mosh[ëa]|sa vje[çt]|i vog[ëe]l|old enough/i,
-    en: "We have programs for two groups:\n• Web Development: for younger learners (age details coming soon)\n• Pro Tracks: 19+ (adults)\nNo upper age limit — it's never too late to learn coding!",
-    sq: "Kemi programe për dy grupe:\n• Web Development: për nxënës më të vegjël (detajet e moshës së shpejti)\n• Pro Tracks: 19+ (të rritur)\nPa kufi të sipërme moshe — kurrë nuk është vonë për të mësuar kodim!",
+    en: "We have programs for two groups:\n• Web Development: for younger learners\n• Pro Tracks: for adults\nNo upper age limit — it's never too late to learn coding!",
+    sq: "Kemi programe për dy grupe:\n• Web Development: për nxënës më të vegjël\n• Pro Tracks: për të rritur\nPa kufi të sipërme moshe — kurrë nuk është vonë për të mësuar kodim!",
   },
   {
     pattern: /parent|prind|fëmij.*regjist|child.*enroll|vajz|djal/i,

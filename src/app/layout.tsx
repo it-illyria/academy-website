@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     default: "Lika Academy — Coding Academy in Kamëz, Tirana",
     template: "%s | Lika Academy",
   },
-  description: "AI-focused coding academy in Kamëz, Tirana, Albania. Web Development for younger learners and Pro Tracks for adults (19+): Python, JavaScript, Golang, .NET. Prices from 99€.",
+  description: "AI-focused coding academy in Kamëz, Tirana, Albania. Web Development for younger learners and Pro Tracks for adults: Python, JavaScript, Golang, .NET. Prices from 99€.",
   keywords: ["coding academy", "Kamëz", "Tirana", "Albania", "programming courses", "Python", "JavaScript", "Golang", ".NET", "web development", "Lika Academy", "akademi kodimi", "kurse programimi"],
   authors: [{ name: "Lika Academy" }],
   creator: "Lika Academy",

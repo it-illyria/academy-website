@@ -30,7 +30,7 @@ export function ProgramsPreview() {
     {
       icon: BrainCircuit,
       title: t("adults"),
-      age: t("adults_age"),
+      age: "",
       desc: t("adults_desc"),
       category: "adults" as Course["category"],
     },

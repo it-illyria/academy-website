@@ -357,7 +357,7 @@ These should be added when the business scales past 50+ students or handles real
 
 **Web Development:** 2 months, 4 portfolio projects, price TBD.
 
-**Pro Tracks (19+):** 2 months, 4 portfolio projects, **99€ launch price** (no crossed-out regular price shown on site — internal reference only, see `docs/talking-points-ubt.html`).
+**Pro Tracks (adults):** 2 months, 4 portfolio projects, **99€ launch price** (no crossed-out regular price shown on site — internal reference only, see `docs/talking-points-ubt.html`). No age badge/number shown on site as of 2026-09-20 — age references removed sitewide per explicit request.
 
 **Course data lives in `src/lib/courses.ts`.** Admin CMS can override via Supabase; `src/lib/cms.ts` tries Supabase first, falls back to hardcoded.
 
